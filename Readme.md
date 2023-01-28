@@ -25,9 +25,9 @@ matrix.
 
 A "thread per element" matrix multiplication approach would involve creating a separate thread for each element in the resulting matrix. Each thread would be responsible for computing the value of a single element in the resulting matrix by multiplying the corresponding row and column elements from the input matrices.
 
-<div style=text-align:center>
+<p align="center" width="100%">
 <img src="illustrations/matmult_thread.png">
-</div>
+</p>
 
 It's important to note that while this approach can greatly improve the performance of matrix multiplication when the matrices are large, it can also be memory intensive, as each thread requires its own stack and may also require additional memory for storing intermediate results. Additionally, creating and managing a large number of threads can also have a significant overhead, which can offset the performance benefits of parallelization.
 
