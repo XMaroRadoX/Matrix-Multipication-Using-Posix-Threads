@@ -11,7 +11,7 @@ Matrix multiplication is a binary operation that takes a pair of matrices, and p
 For example, if we have two matrices A and B, where A is a 2x2 matrix and B is a 2x2 matrix, the resulting matrix C would be a 2x2 matrix. Each element in C, c(i,j), would be the dot product of the i-th row of A and the j-th column of B.
 
 <p align="center" width="100%">
-<img src="https://i1.faceprep.in/Companies-1/matrix-multiplication-in-python.png" width="600" height="400">
+<img src="Illustrations/matmult.png" width="600" height="400">
 </p>
 
 ### Single Process Solution
@@ -26,7 +26,7 @@ matrix.
 A "thread per element" matrix multiplication approach would involve creating a separate thread for each element in the resulting matrix. Each thread would be responsible for computing the value of a single element in the resulting matrix by multiplying the corresponding row and column elements from the input matrices.
 
 <div style=text-align:center>
-<img src="https://www.researchgate.net/profile/J-Haeuser/publication/273445689/figure/fig1/AS:648611121623049@1531652350506/The-multi-threaded-matrix-multiplication-is-performed-by-splitting-matrix-C-into.png" style="clip-path: inset(10% 11% 0% 15%);">
+<img src="illustrations/matmult_thread.png">
 </div>
 
 It's important to note that while this approach can greatly improve the performance of matrix multiplication when the matrices are large, it can also be memory intensive, as each thread requires its own stack and may also require additional memory for storing intermediate results. Additionally, creating and managing a large number of threads can also have a significant overhead, which can offset the performance benefits of parallelization.
@@ -79,6 +79,6 @@ This code is licensed under the MIT License.
 
 ### Contribution :clinking_glasses:
 
-* Images are courtesy of [geeksforgeeks](https://www.geeksforgeeks.org/),[faceprep](https://faceprep.in),[resarchgate](https://resarchgate.net)
+Feel free to contribute just make a pull request and do what you wish. 😼
 
 [![License](https://img.shields.io/badge/License-MIT-red.svg)](https://opensource.org/licenses/MIT)
