@@ -75,7 +75,7 @@ This code is licensed under the MIT License.
 
 ### Authors :pen:
 
-* Marwan Khaled
+* Marwan Radwan
 
 ### Contribution :clinking_glasses:
 
