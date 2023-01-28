@@ -67,27 +67,32 @@ int main()
     {
         perror("Error allocating memory");
     }
-
+    
+// Filing the matrices with random numbers
     populateMatrix(matrixA, l, m);
     populateMatrix(matrixB, m, n);
 
-    clock_t start_process = clock();
-    matmult(matrixA, matrixB, matrixC, l, m, n);
-    clock_t end_process = clock();
 
     printf("Matrix A:\n");
     printMatrix(matrixA, l, m);
     printf("Matrix B:\n");
     printMatrix(matrixB, m, n);
+
+// Timing Regular Matrix Multiplication using a single process
+    clock_t start_process = clock();
+    matmult(matrixA, matrixB, matrixC, l, m, n);
+    clock_t end_process = clock();
     printf("Matrix C (single process):\n");
     printMatrix(matrixC, l, n);
 
+// Timing Matrix Multiplication using a thread per element
     clock_t start_t1 = clock();
     matmult_v1(matrixA, matrixB, matrixC, l, m, n);
     clock_t end_t1 = clock();
     printf("Matrix C (each element by a thread):\n");
     printMatrix(matrixC, l, n);
 
+// Timing Matrix Multiplication using a thread per row
     clock_t start_t2 = clock();
     matmult_v2(matrixA, matrixB, matrixC, l, m, n);
     clock_t end_t2 = clock();
