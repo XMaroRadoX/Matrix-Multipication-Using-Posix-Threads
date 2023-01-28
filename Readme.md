@@ -10,9 +10,9 @@ Matrix multiplication is a binary operation that takes a pair of matrices, and p
 
 For example, if we have two matrices A and B, where A is a 2x2 matrix and B is a 2x2 matrix, the resulting matrix C would be a 2x2 matrix. Each element in C, c(i,j), would be the dot product of the i-th row of A and the j-th column of B.
 
-<div style="text-align:center">
+<p align="center" width="100%">
 <img src="https://i1.faceprep.in/Companies-1/matrix-multiplication-in-python.png" width="600" height="400">
-</div>
+</p>
 
 ### Single Process Solution
 
@@ -29,10 +29,9 @@ A "thread per element" matrix multiplication approach would involve creating a s
 <img src="https://www.researchgate.net/profile/J-Haeuser/publication/273445689/figure/fig1/AS:648611121623049@1531652350506/The-multi-threaded-matrix-multiplication-is-performed-by-splitting-matrix-C-into.png" style="clip-path: inset(10% 11% 0% 15%);">
 </div>
 
-
 It's important to note that while this approach can greatly improve the performance of matrix multiplication when the matrices are large, it can also be memory intensive, as each thread requires its own stack and may also require additional memory for storing intermediate results. Additionally, creating and managing a large number of threads can also have a significant overhead, which can offset the performance benefits of parallelization.
-  
- **Overall, thread per element approach is not a common approach, and it's not always the best option for matrix multiplication, as it depends on the size of matrices, the number of cores on the machine and other factors.**
+
+**Overall, thread per element approach is not a common approach, and it's not always the best option for matrix multiplication, as it depends on the size of matrices, the number of cores on the machine and other factors.**
 
 ### Thread per row solution
 
@@ -60,6 +59,7 @@ Have to be on debian-based distro that have apt as it's package manager to run t
 
 ```sh
 sudo apt update && sudo apt install gcc make
+
 ```
 
 ### Run :green_circle:
