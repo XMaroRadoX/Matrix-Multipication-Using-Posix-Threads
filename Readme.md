@@ -26,7 +26,7 @@ matrix.
 A "thread per element" matrix multiplication approach would involve creating a separate thread for each element in the resulting matrix. Each thread would be responsible for computing the value of a single element in the resulting matrix by multiplying the corresponding row and column elements from the input matrices.
 
 <div style=text-align:center>
-<img src="https://www.researchgate.net/profile/J_Haeuser/publication/273445689/figure/download/fig1/AS:648611121623049@1531652350506/The-multi-threaded-matrix-multiplication-is-performed-by-splitting-matrix-C-into.png" style="clip-path: inset(10% 11% 0% 15%);">
+<img src="https://www.researchgate.net/profile/J-Haeuser/publication/273445689/figure/fig1/AS:648611121623049@1531652350506/The-multi-threaded-matrix-multiplication-is-performed-by-splitting-matrix-C-into.png" style="clip-path: inset(10% 11% 0% 15%);">
 </div>
 
 
