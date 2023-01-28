@@ -24,7 +24,6 @@ matrix.
 ### Thread per element Solution
 
 A "thread per element" matrix multiplication approach would involve creating a separate thread for each element in the resulting matrix. Each thread would be responsible for computing the value of a single element in the resulting matrix by multiplying the corresponding row and column elements from the input matrices.
-
 <p align="center" width="100%">
 <img src="Illustrations/matmult_thread.png">
 </p>
@@ -59,6 +58,7 @@ Have to be on debian-based distro that have apt as it's package manager to run t
 
 ```sh
 sudo apt update && sudo apt install gcc make
+
 
 ```
 
